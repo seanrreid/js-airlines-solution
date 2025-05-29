@@ -1,8 +1,5 @@
----
-title: Welcome to JavaScript Air
-sidebar_label: JS Airlines
-sidebar_position: 4.08
----
+# JavaScript Airlines
+
 <!-- markdownlint-disable no-inline-html -->
 Use a mock data API with Flight Data to create an airport flight dashboard.
 
