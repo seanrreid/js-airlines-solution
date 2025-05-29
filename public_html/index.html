@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Airlines</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <main>
+      <h1 class="title">Sean Airlines</h1>
+      <section class="dashboard search">
+        <form id="searchForm" class="form">
+          <div class="inputGrid">
+            <label>
+              Airline
+              <input
+                name="airline"
+                type="text"
+                placeholder="Search by airline name"
+                class="input"
+              />
+            </label>
+            <span>OR</span>
+            <label>
+              Flight Number
+              <input
+                name="flightNumber"
+                type="text"
+                placeholder="12345"
+                class="input"
+              />
+            </label>
+          </div>
+          <button class="button is-primary" type="submit">Search</button>
+        </form>
+        <div id="searchResults" class="searchResults hidden">
+          <h2 class="title">Search Results</h2>
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Airline</th>
+                <th>Flight Number</th>
+                <th>Departure Time</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </section>
+      <section class="dashboard departures">
+        <h2 class="title">Departures</h2>
+        <table id="flightDetails" class="table">
+          <thead>
+            <tr>
+              <th>Airline</th>
+              <th>Flight Number</th>
+              <th>Departure Time</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </section>
+    </main>
+    <script src="./js/scripts.js"></script>
+  </body>
+</html>
